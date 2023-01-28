@@ -1,0 +1,22 @@
+@import '_theme_main/link_theme_main';
+@import '__arrowSVG/link__arrowSVG';
+.link {
+  text-decoration: none;
+  font-family: 'PT_Sans' ,"Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $link--color;
+
+  @media (max-width: $md - 1px) {
+    font-size: 12px;
+  }
+
+  &.link_theme_main{
+    @media (max-width: $md - 1px){
+      line-height: 16px;
+    }
+  }
+}

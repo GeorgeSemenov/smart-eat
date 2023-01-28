@@ -1,0 +1,6 @@
+.about-us__content {
+  text-align: left;
+  @media (max-width: $md - 1px){
+    text-align: center;
+  }
+}

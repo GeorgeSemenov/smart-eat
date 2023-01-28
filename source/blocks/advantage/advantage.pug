@@ -1,0 +1,14 @@
+include __description/advantage__description.pug
+include __measure/advantage__measure.pug
+include __number/advantage__number.pug
+mixin advantage(modifier)
+  .advantage&attributes(attributes)
+    if modifier == undefined
+      - modifier = {measure: "empty_advantage"};
+    
+    if modifier["number"] != undefined
+      +advantage__number(modifier)
+    if modifier["measure"] != undefined
+      +advantage__measure(modifier)
+    if modifier["description"] != undefined
+      +advantage__description(modifier)

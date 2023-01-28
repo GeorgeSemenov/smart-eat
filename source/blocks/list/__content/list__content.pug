@@ -1,0 +1,6 @@
+mixin list__content(modifier)
+  if modifier["itemsArr"] == undefined
+    - modifier["itemsArr"] = [{text: "empty__itemsArr", modifier:""}];
+  ul.list__content&attributes(attributes)
+    each item in modifier.itemsArr
+      +list__item(item)(class=item.modifier)

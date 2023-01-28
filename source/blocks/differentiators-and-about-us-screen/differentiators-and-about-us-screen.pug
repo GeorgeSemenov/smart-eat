@@ -1,0 +1,6 @@
+include ../differentiators/differentiators.pug
+include ../about-us/about-us.pug
+mixin differentiators-and-about-us-screen(modifier)
+  section.differentiators-and-about-us-screen&attributes(attributes)
+    +differentiators(modifier.differentiators)
+    +about-us(modifier.aboutUs)

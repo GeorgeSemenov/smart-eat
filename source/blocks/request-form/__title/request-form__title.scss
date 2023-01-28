@@ -1,0 +1,14 @@
+.request-form__title {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $request-form__title--BGColor;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  @media (max-width: $md - 1px){
+    width: 200px;
+  }
+}

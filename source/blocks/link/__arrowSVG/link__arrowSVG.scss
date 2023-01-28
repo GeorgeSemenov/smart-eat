@@ -1,0 +1,28 @@
+.link__arrowSVG {
+  border-radius: 100%;
+  margin-left: 40px;
+  position: relative;
+  top: 3px;
+  @media (max-width: $md - 1px) {
+    margin-left: 28px;
+  }
+}
+
+.link_theme_main{
+  @media (max-width: $md - 1px) {
+    margin-top: -5px;
+  }
+  .link__arrowSVG {
+    margin-left: 20px;
+    background-color: $link_theme_main__arrowSVG--BGColor;
+    @media (max-width: $md - 1px){
+      margin-left: 5px;
+    }
+  }
+}
+
+.link:hover{
+  .link__arrowSVG{
+    background-color: $link__arrowSVG-hover--BGColor;
+  }
+}

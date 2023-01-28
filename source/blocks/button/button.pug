@@ -1,0 +1,6 @@
+mixin button(modifier)
+  if modifier["buttonText"] == undefined
+    - modifier["buttonText"] = "empty__buttonText";
+  if modifier["buttonType"] == undefined
+    - modifier["buttonType"] = "submit";
+  button.button&attributes(attributes)(type=modifier.buttonType)!=modifier.buttonText

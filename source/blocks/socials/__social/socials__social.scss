@@ -1,0 +1,13 @@
+.socials__social {
+  margin-right: 11px;
+  display: inline-block;
+  svg:hover{
+    path:nth-child(3),path:nth-child(4),path:nth-child(5){
+      fill: $socials__social--fill;
+    }
+  }
+  @media (max-width: $md - 1px){
+    margin-right: 0px;
+  }
+}
+

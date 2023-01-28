@@ -1,0 +1,7 @@
+.footer__contact {
+  text-decoration: none;
+  color: $footer__contact--color;
+  &:hover{
+    color: $footer__contact-hover--color;
+  }
+}

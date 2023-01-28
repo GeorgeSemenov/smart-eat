@@ -1,0 +1,11 @@
+@import '__list/differentiators__list';
+@import '__title/differentiators__title';
+@import '__lists/differentiators__lists';
+@import '../title/title';
+@import '../list/list';
+.differentiators {
+  @media (max-width: $md - 1px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
